@@ -1,4 +1,3 @@
-import json
 from fastapi import FastAPI
 from datetime import date
 import json
@@ -11,4 +10,3 @@ app = FastAPI()
 def get_date():
   toJson = json.dumps({"date": str(date.today())})
   return json.loads(toJson)
-
